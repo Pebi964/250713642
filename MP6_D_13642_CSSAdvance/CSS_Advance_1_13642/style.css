@@ -1,0 +1,135 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0fdf4;
+    color: #1f2937;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+.form-container {
+    max-width: 750px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 35px 40px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.08);
+    border-top: 5px solid #059669;
+}
+
+h1 {
+    text-align: center;
+    color: #065f46;
+    margin-bottom: 8px;
+    font-size: 26px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #4b5563;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr {
+    border-bottom: 1px solid #e5e7eb;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+td {
+    padding: 14px 10px;
+    vertical-align: middle;
+    font-size: 14px;
+}
+
+td.align-top {
+    vertical-align: top;
+    padding-top: 18px;
+}
+
+td:first-child {
+    width: 35%;
+    color: #1f2937;
+}
+
+input[type="text"], select, textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background-color: #f9fafb;
+}
+
+input[type="text"]:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #059669;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(5, 150, 105, 0.15);
+}
+
+.checkbox-group, .radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.checkbox-group label, .radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+input[type="checkbox"], input[type="radio"] {
+    accent-color: #059669;
+    width: 16px;
+    height: 16px;
+}
+
+input[type="file"] {
+    font-size: 13px;
+    color: #4b5563;
+}
+
+.file-note {
+    display: block;
+    font-size: 12px;
+    color: #9ca3af;
+    margin-top: 4px;
+}
+
+.text-center {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.submit-btn {
+    background-color: #059669;
+    color: #ffffff;
+    border: none;
+    padding: 12px 30px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+.submit-btn:hover {
+    background-color: #047857;
+}
+
+.submit-btn:active {
+    transform: scale(0.98);
+}

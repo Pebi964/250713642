@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulir Pendaftaran Kegiatan</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+
+    <div class="form-container">
+        <h1>Registrasi Partisipasi Event</h1>
+        <p class="subtitle">Mohon isi data diri dan opsi kegiatan yang ingin Anda ikuti.</p>
+        
+        <form action="" method="post" enctype="multipart/form-data">
+            
+            <table cellspacing="0" cellpadding="0">
+                <tr>
+                    <th colspan="2" class="table-header">
+                        <strong>Informasi Identitas Peserta</strong>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="col-label">
+                        <label for="nama"><strong>Nama Lengkap Peserta</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="nama" name="nama" placeholder="Ketikkan nama lengkap..." />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-label">
+                        <label for="nim"><strong>Nomor Pokok Mahasiswa (NPM)</strong></label>
+                    </td>
+                    <td>
+                        <input type="text" id="nim" name="nim" placeholder="Masukkan NPM aktif..." />
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-label">
+                        <label for="prodi"><strong>Program Studi / Jurusan</strong></label>
+                    </td>
+                    <td>
+                        <select id="prodi" name="prodi">
+                            <option>Informatika</option>
+                            <option>Sistem Informasi</option>
+                            <option>Teknik Industri</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-label">
+                        <strong>Gender / Jenis Kelamin</strong>
+                    </td>
+                    <td>
+                        <div class="inline-options">
+                            <label><input type="radio" id="lakilaki" name="jk" value="Laki-laki" /> Laki-laki</label>
+                            <label><input type="radio" id="perempuan" name="jk" value="Perempuan" /> Perempuan</label>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <table cellspacing="0" cellpadding="0">
+                <tr>
+                    <th colspan="2" class="table-header">
+                        <strong>Opsi &amp; Kategori Sesi</strong>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="col-label">
+                        <strong>Kategori Agenda</strong>
+                    </td>
+                    <td>
+                        <div class="inline-options">
+                            <label><input type="radio" id="seminar" name="kegiatan" value="Seminar" /> Seminar Nasional</label>
+                            <label><input type="radio" id="pelatihan" name="kegiatan" value="Pelatihan" /> Workshop / Pelatihan</label>
+                            <label><input type="radio" id="diskusi" name="kegiatan" value="Diskusi" /> Sesi Diskusi Panel</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-label align-top">
+                        <strong>Topik &amp; Bidang Minat</strong>
+                    </td>
+                    <td>
+                        <div class="stacked-options">
+                            <label><input type="checkbox" id="teknologi" name="minat" value="Teknologi" /> Pengembangan Teknologi</label>
+                            <label><input type="checkbox" id="organisasi" name="minat" value="Organisasi" /> Manajemen Organisasi</label>
+                            <label><input type="checkbox" id="karier" name="minat" value="Karier" /> Persiapan Karier &amp; Industri</label>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-label">
+                        <label for="waktu"><strong>Pilihan Jadwal Waktu</strong></label>
+                    </td>
+                    <td>
+                        <select id="waktu" name="waktu">
+                            <option>Sesi Pagi (08:00 - 11:30 WIB)</option>
+                            <option>Sesi Siang (12:30 - 15:30 WIB)</option>
+                            <option>Sesi Sore (16:00 - 18:00 WIB)</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+
+            <table cellspacing="0" cellpadding="0">
+                <tr>
+                    <th colspan="2" class="table-header">
+                        <strong>Dokumen &amp; Catatan Tambahan</strong>
+                    </th>
+                </tr>
+                <tr>
+                    <td class="col-label align-top">
+                        <label for="harapan"><strong>Ekspektasi &amp; Harapan Mengikuti Kegiatan</strong></label>
+                    </td>
+                    <td>
+                        <textarea id="harapan" name="harapan" rows="4" placeholder="Tuliskan harapan atau target yang ingin dicapai dari event ini..."></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-label">
+                        <label for="bukti"><strong>Unggah Lampiran Bukti Transaksi</strong></label>
+                    </td>
+                    <td>
+                        <input type="file" id="bukti" name="bukti" />
+                        <span class="file-note">Format berkas disarankan berbentuk PDF atau Image (JPG/PNG).</span>
+                    </td>
+                </tr>
+            </table>
+
+            <div class="button-wrapper">
+                <input type="submit" name="kirim" value="Kirim Formulir Pendaftaran" class="submit-btn" />
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
